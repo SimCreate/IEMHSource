@@ -1,0 +1,22 @@
+1. ERROR MESSAGE : Can't Create Schema for 'mysql' database
+ -> 권한 세팅 필요 : grant all on MYSQL.* to root@'localhost' : root 사용자가 MYSQL 데이터테이블의 모든 권한을 가짐
+
+2. 한글 세팅 : ALTER TABLE PRODUCTINFOS DEFAULT CHARACTER SET utf8;
+
+INSERT INTO PRODUCTINFOS
+(
+CLASS, NAME, PRICE, COUNT, USEFLAG
+)
+VALUES
+(
+'음식', '진라면', '1000', 3, 1
+);
+
+INSERT INTO PRODUCTINFOS
+(
+CLASS, NAME, PRICE, COUNT, USEFLAG
+)
+VALUES
+(
+'필기구', '볼펜', '1000', 3, 1
+);
